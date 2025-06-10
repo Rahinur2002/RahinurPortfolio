@@ -1,308 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Rahinur Miah</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>  
-                <li><a href="#experience">Experience</a></li>  
-               <!-- <li><a href="#projects">Projects</a></li>  -->
-                <li><a href="#contact">Contact</a></li>  
-            </ul>
-        </div>
+      <div class="logo">Rahinur Miah</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#projects">Projects</a></li>  -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <nav id = "hamburger-nav">
-        <div class="logo">Rahinur Miah</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>  
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>  
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>  
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
-            </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Rahinur Miah</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
-    <section id ="profile">
-        <div class ="section__pic-container">
-            <img src="./Assets/RahinurPFP.webp" alt="Rahinur Miah Profile Picture"/>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./Assets/RahinurPFP.webp"
+          alt="Rahinur Miah Profile Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Rahinur Miah</h1>
+        <p class="section__text__p2">
+          a college student, pursuing a career in software engineering
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Assets/MiahRahinurResume2025.pdf')"
+          >
+            My Resume
+          </button>
 
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I am</p>
-            <h1 class="title">Rahinur Miah</h1>
-            <p class ="section__text__p2">a college student, pursuing a career in software engineering</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./Assets/MiahRahinurResume2025.pdf')">My Resume</button>
-
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./Assets/linkedin.png"
-                 alt="My Linkedin profile"
-                class="icon" 
-                onclick="location.href='https:www.linkedin.com/in/rahinur-miah-49b04b262/'"/>
-               <!-- <img src="./Assets/github.png"
-                 alt="My Github profile"
-                class="icon" 
-                onclick="location.href='https:github.com/Zohinur'"/>-->
-
-            </div>
+        <div id="socials-container">
+          <img
+            src="./Assets/linkedin.png"
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/rahinur-miah-49b04b262/'"
+          />
         </div>
+      </div>
     </section>
     <section id="about">
-       <h1 class="title">About Me</h1>
-        <p class="section__text__p1">My interest in technology led me to pursue a degree in computer science. I have always been amazed by technology growing up, I loved using any tech tools I could find in my house. I have always wondered how all of these futuristic techs work, especially in the digital world. This got me interested in coding and video games, both got me extremely hooked on techs. Games and coding led me to be curious about programming, and the more I dug deep the more I learned how cool and unique coding is for problem-solving and how creative you can be with them. After earning my associate degree in city tech, I have decided to keep refining my technical coding as technology is evolving every day. Which ultimately, led me to pursue a degree in computer science, I believe it's a perfect combination of my creativity and curiosity to learn and grow as the tech field, offers never-ending opportunities to learn, create and collaborate on fun projects.</p>
-        <div class="section-container">
-            <div class="section__pic__container">
-               <!-- <img src="./Assets/profile-pic (3).png" alt="profile picture"
-                class="about-pic"/> -->
+      <h1 class="title">About Me</h1>
+      <p class="section__text__p1">
+        My interest in technology led me to pursue a degree in computer science.
+        I have always been amazed by technology growing up, I loved using any
+        tech tools I could find in my house. I have always wondered how all of
+        these futuristic techs work, especially in the digital world. This got
+        me interested in coding and video games, both got me extremely hooked on
+        techs. Games and coding led me to be curious about programming, and the
+        more I dug deep the more I learned how cool and unique coding is for
+        problem-solving and how creative you can be with them. After earning my
+        associate degree in city tech, I have decided to keep refining my
+        technical coding as technology is evolving every day. Which ultimately,
+        led me to pursue a degree in computer science, I believe it's a perfect
+        combination of my creativity and curiosity to learn and grow as the tech
+        field, offers never-ending opportunities to learn, create and
+        collaborate on fun projects.
+      </p>
+      <div class="section-container">
+        <div class="section__pic__container"></div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Assets/experience.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Deloitte - Software Engineer Intern Feb 2024 - May 2024</p>
+              <p>
+                Amerikids Productions - Video Editing Intern - August 2023 -
+                January 2024
+              </p>
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./Assets/experience.png" 
-                        alt="education icon"
-                        class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>Deloitte - Software Engineer Intern Feb 2024 - May 2024
-                        </p>
-                        <p>Amerikids Productions - Video Editing Intern - August 2023 - January 2024
-                        </p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./Assets/education.png" 
-                        alt="Education icon"
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>New york City College of Technology</p>
-                        <p>Completed Associate Degree</p>
-                        <p>Currently Pursuing Bachelor Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I would not only bring technical skills but also soft skills that are crucial for a job. Through my academic background in computer science at City Tech, I have developed a strong foundation in coding, including systems management and solid foundations of programming language. My experience at Deloitte gave me hands-on experience on what it's like to work with real-world coding projects with a team. Through these experiences, I have learned to take on complicated technical challenges and how to adapt to new tools.
-
-                        Additionally, I also bring a strong set of soft skills, through my experiences in coding, I have learned how important it is to collaborate. Specifically in coding where the projects are rarely ever done by yourself, you have to have the right sets of skills to be a valuable team member. I believe I have the right skill sets that are needed to collaborate in a team. I communicate with team members effectively, I love to share ideas with my team and I am always open to taking feedback from my team to look for ways to improve myself so I become better than who I was yesterday. I am always comfortable taking on leadership in a team when needed, helping others, and guiding them through the projects so everything gets done efficiently. Overall, I believe with both my technical skills and sets of soft skills that I have learned through my experience, I would be a valuable addition to the team.</p>
-                </div>
+            <div class="details-container">
+              <img
+                src="./Assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>New york City College of Technology</p>
+              <p>Completed Associate Degree</p>
+              <p>Currently Pursuing Bachelor Degree</p>
             </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I would not only bring technical skills but also soft skills that
+              are crucial for a job. Through my academic background in computer
+              science at City Tech, I have developed a strong foundation in
+              coding, including systems management and solid foundations of
+              programming language. My experience at Deloitte gave me hands-on
+              experience on what it's like to work with real-world coding
+              projects with a team. Through these experiences, I have learned to
+              take on complicated technical challenges and how to adapt to new
+              tools. Additionally, I also bring a strong set of soft skills,
+              through my experiences in coding, I have learned how important it
+              is to collaborate. Specifically in coding where the projects are
+              rarely ever done by yourself, you have to have the right sets of
+              skills to be a valuable team member. I believe I have the right
+              skill sets that are needed to collaborate in a team. I communicate
+              with team members effectively, I love to share ideas with my team
+              and I am always open to taking feedback from my team to look for
+              ways to improve myself so I become better than who I was
+              yesterday. I am always comfortable taking on leadership in a team
+              when needed, helping others, and guiding them through the projects
+              so everything gets done efficiently. Overall, I believe with both
+              my technical skills and sets of soft skills that I have learned
+              through my experience, I would be a valuable addition to the team.
+            </p>
+          </div>
         </div>
-        <img src="./Assets/arrow.png" 
-        alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#experience'">
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Technical Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Programming Languages</h3>
-                                <p>JavaScript, SQL, HTML, CSS, PHP</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Frameworks and Libraries</h3>
-                                <p>React, Node.js, Express</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Database</h3>
-                                <p>PostgreSQL
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>API</h3>
-                                <p>RESTful API design, Postman testing
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Version Control</h3>
-                                <p> Git/GitHub 
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Development Practices</h3>
-                                <p> Scrum, Agile Methodologies
-
-                                </p>
-                            </div>
-                        </article>
-                        
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming Languages</h3>
+                  <p>JavaScript, SQL, HTML, CSS, PHP</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Soft Skills
-                    </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Collaboration</h3>
-                                <p> Working effectively in a team-oriented environment
-
-                                </p>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Adaptability</h3>
-                                <p> Adjusting to new tools and project requirements
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Problem-Solving</h3>
-                                <p> Troubleshooting and resolving technical challenges
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Communication</h3>
-                                <p> Explaining complex technical ideas to team members
-                                </p>
-                            </div>
-                        </article>
-
-                       
-                
-                        
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Frameworks and Libraries</h3>
+                  <p>React, Node.js, Express</p>
                 </div>
-            <!--<div class="details-container">
-                    <h2 class="experience-sub-title">Relevant Coursework</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Computer Programming and Problem Solving </h3>
-                                <p>Python-Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Programming Fundamentals</h3>
-                                <p>Java-intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" 
-                            alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Database Systems Fundamentals</h3>
-                                <p>mySQL-experienced</p>
-                            </div>
-                        </article>
-                       
-                
-                        
-                    </div>
-                </div> -->
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database</h3>
+                  <p>PostgreSQL</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>API</h3>
+                  <p>RESTful API design, Postman testing</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Version Control</h3>
+                  <p>Git/GitHub</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Development Practices</h3>
+                  <p>Scrum, Agile Methodologies</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Collaboration</h3>
+                  <p>Working effectively in a team-oriented environment</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability</h3>
+                  <p>Adjusting to new tools and project requirements</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem-Solving</h3>
+                  <p>Troubleshooting and resolving technical challenges</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                  <p>Explaining complex technical ideas to team members</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-   <!-- <section id="projects">
-        <p class="section__text__p1"> Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./Assets/project-flappybird.png" alt="Project 1"
-                    class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location
-                    href ='https/github.com/'"></button>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section id="contact">
-        <p class="section__text__p1"> Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="Assets/email.png" alt="Email icon"
-                class="icon contact-icon"
-                />
-                <p href="mailto:miahrahinur2002@gmail.com">miahrahinur2002@gmail.com</p>
-            </div>
-            <div class="contact-info-container">
-                <img src="Assets/linkedin.png" 
-                alt="Linkedin icon"
-                class="icon contact-icon"
-                />
-                <p href="https://www.linkedin.com/in/rahinur-miah-49b04b262/">Linkedin</p>
-            </div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p href="mailto:miahrahinur2002@gmail.com">
+            miahrahinur2002@gmail.com
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p href="https://www.linkedin.com/in/rahinur-miah-49b04b262/">
+            Linkedin
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>  
-                    <li><a href="#experience">Experience</a></li>  
-                   <!-- <li><a href="#projects">Projects</a></li>  -->
-                    <li><a href="#contact">Contact</a></li>  
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Rahinur Miah</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#projects">Projects</a></li>  -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Rahinur Miah</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
