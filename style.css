@@ -58,13 +58,44 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    display: inline-block;
+    animation: logoPulse 2s infinite alternate, logoColor 8s linear infinite;
+}
+
+@keyframes logoPulse {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px #232526, 0 0 20px #232526;
+    }
+    100% {
+        transform: scale(1.08);
+        text-shadow: 0 0 20px #485563, 0 0 40px #283e51;
+    }
+}
+
+@keyframes logoColor {
+    0% {
+        color: #f3f3f3;
+    }
+    25% {
+        color: #a1c4fd;
+    }
+    50% {
+        color: #00c6fb;
+    }
+    75% {
+        color: #485563;
+    }
+    100% {
+        color: #f3f3f3;
+    }
 }
 
 .logo:hover{
     cursor: default;
 }
 
-/* Hamburger Menus */
+
 #hamburger-nav {
     display: none;
 }
@@ -152,6 +183,8 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    color: white;
+    background: linear-gradient(135deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), url('./Assets/background.jpeg') no-repeat center center/cover;
 }
 
 .section-container {
@@ -436,3 +469,23 @@ footer{
 footer p {
     text-align: center;
 }
+
+body {
+  animation: gradientBG 12s ease-in-out infinite;
+  background: linear-gradient(270deg, #232526, #414345, #283e51, #485563, #232526);
+  background-size: 800% 800%;
+  color: #f3f3f3;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
